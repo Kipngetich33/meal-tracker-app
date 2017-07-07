@@ -1,5 +1,7 @@
 body {
   font-family: 'Bellefair', serif;
+  background-color: #DBE3E2;
+  font-size: 20px;
 }
 /* Float Shadow */
 .hvr-float-shadow {
@@ -42,4 +44,7 @@ body {
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.item {
+  width: 100%
 }

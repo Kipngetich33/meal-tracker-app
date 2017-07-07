@@ -39,12 +39,12 @@ import { Meal } from './meal.model'
     newDescription.value='';
     newCalories.value='';
     ">Add</button>
-        
+
     </div>
 
   </div>
 </div>
-   <h1>New Meal</h1>
+
 
 
   `
