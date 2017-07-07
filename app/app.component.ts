@@ -14,10 +14,12 @@ import { Meal } from './meal.model'
     </meal-list>
 
     <!--meal-edit tags-->
-    <edit-meal [childselectedMeal]="selectedTask"
+    <edit-meal [childselectedMeal]="selectedMeal"
     (doneClickedSender)="finishedEditing()"></edit-meal>
 
     <!--new meal tags-->
+    <new-meal (newMealSender)="addMeal($event)"
+    ></new-meal>
 
   `
 })
@@ -29,6 +31,7 @@ export class AppComponent {
    new Meal("Waffles","needed more syrup",350)
 
  ];
+ //Function to Add a new meal to the meals array 
  addMeal(newMealFromChild: Meal) {
    this.masterMealList.push(newMealFromChild)
  }
