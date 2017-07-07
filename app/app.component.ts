@@ -9,12 +9,12 @@ import { Meal } from './meal.model'
       <h1 class="center">Meal Tracker App</h1>
     </div>
     <!--meal-list tags-->
-    <meal-list [childMealList]="masterKegList"
+    <meal-list [childMealList]="masterMealList"
     (clickSender)="showDetails($event)">
     </meal-list>
 
     <!--meal-edit tags-->
-    <edit-meal [childselectedKeg]="selectedTask"
+    <edit-meal [childselectedMeal]="selectedTask"
     (doneClickedSender)="finishedEditing()"></edit-meal>
 
     <!--new meal tags-->
@@ -23,14 +23,14 @@ import { Meal } from './meal.model'
 })
 
 export class AppComponent {
- public masterKegList: Meal[] = [
+ public masterMealList: Meal[] = [
    new Meal("chicken","Very tasty",450),
    new Meal("Pizza","Needed more toppings",250),
    new Meal("Waffles","needed more syrup",350)
 
  ];
  addMeal(newMealFromChild: Meal) {
-   this.masterKegList.push(newMealFromChild)
+   this.masterMealList.push(newMealFromChild)
  }
  selectedMeal: Meal= null;
 

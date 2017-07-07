@@ -18,6 +18,7 @@ import { Meal } from './meal.model'
   <div>
     <label>Enter Calories</label>
       <input [(ngModel)]="childselectedMeal.calories">
+      <button (click)="doneClicked()">Done</button>
   </div>
 
 </div>
@@ -26,7 +27,7 @@ import { Meal } from './meal.model'
 })
 export class EditMealComponent {
 
-  @Input() childselectedKeg: Meal;
+  @Input() childselectedMeal: Meal;
   @Output() doneClickedSender = new EventEmitter();
   doneClicked() {
     this.doneClickedSender.emit();
