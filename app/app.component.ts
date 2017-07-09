@@ -108,10 +108,10 @@ import { Meal } from './meal.model'
 
 export class AppComponent {
   public masterMealList: Meal[] = [
-    new Meal("chicken", "Very tasty", 450),
-    new Meal("Pizza", "Needed more toppings", 560),
-    new Meal("Waffles", "needed more syrup", 350),
-    new Meal("Githeri","mahindi ilikuwa ngumu",700)
+    new Meal("chicken", "Very tasty", 450,"moment(Date.now()).format(MMMM Do YYYY)"),
+    new Meal("Pizza", "Needed more toppings", 560,"moment(Date.now()).format(MMMM Do YYYY)"),
+    new Meal("Waffles", "needed more syrup", 350,"moment.format(Date.now())"),
+    new Meal("Githeri","mahindi ilikuwa ngumu",700,"moment.format(Date.now())")
 
   ];
   //Function to Add a new meal to the meals array

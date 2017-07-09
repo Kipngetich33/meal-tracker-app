@@ -27,6 +27,7 @@ import { Meal } from './meal.model'
 </div>
   <div class="row">
   <div class="col-md-4">
+  {{currentMeal.time}}
   </div>
   <div class="col-md-4">
   <!--edit button opens the edit modal-->
