@@ -4,11 +4,14 @@ import { Meal } from './meal.model'
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
-    <div class="row">
-      <div class=well>
-        <h1 class="center">Meal Tracker App</h1>
+
+    <div class="container-fluid">
+      <div class="header well">
+        <h1>Meal Tracker App</h1>
       </div>
+      </div>
+      <div class="container">
+        <div class="row">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -77,6 +80,29 @@ import { Meal } from './meal.model'
     <new-meal (newMealSender)="addMeal($event)"
     ></new-meal>
   </div>
+  <div class="container-fluid navbar-bottom">
+   <div class="row">
+   <div class="row footRow">
+   </div>
+     <div class="col-md-12">
+
+     </div>
+       </div>
+
+       <div id="contact">
+         <a target='_blank' href="https://web.facebook.com/daveyhash"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+         <a target='_blank' href="https://github.com/d-kahara"> <i class="fa fa-github " aria-hidden="true"></i></a>
+         <a target='_blank' href="https://www.instagram.com/davidkahara"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       </div>
+
+       <div>
+         <span class="footerName"> <i class="fa fa-copyright" aria-hidden="true"></i>  David Kahara</span>
+       </div>
+
+
+
+
+ </div>
   `
 })
 
@@ -84,7 +110,8 @@ export class AppComponent {
   public masterMealList: Meal[] = [
     new Meal("chicken", "Very tasty", 450),
     new Meal("Pizza", "Needed more toppings", 560),
-    new Meal("Waffles", "needed more syrup", 350)
+    new Meal("Waffles", "needed more syrup", 350),
+    new Meal("Githeri","mahindi ilikuwa ngumu",700)
 
   ];
   //Function to Add a new meal to the meals array

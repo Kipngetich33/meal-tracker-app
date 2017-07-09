@@ -3,6 +3,37 @@ body {
   background-color: #DBE3E2;
   font-size: 20px;
 }
+.mealList {
+   font-family: 'Titillium Web', sans-serif;
+}
+.dropdown {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.editBtn {
+  width: 10rem;
+  border-radius: 0;
+}
+.navbar-bottom {
+  background-color: inherit;
+  text-align: center;
+  height: 15rem;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+.header {
+  background-color: inherit;
+  height: 10rem;
+}
+.footerName {
+  color: blue;
+  font-size: 15px;
+}
+.footRow {
+  height: 10rem;
+}
 /* Float Shadow */
 .hvr-float-shadow {
   display: inline-block;

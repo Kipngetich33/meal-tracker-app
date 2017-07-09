@@ -19,15 +19,15 @@ import { Meal } from './meal.model'
       </div>
       <div class="modal-body">
       <div>
-        <label>Enter Meal Name</label>
-        <input class="form-control" #newName>
+          <span class="label label-warning"><label>Enter Meal Name</label></span>
+        <input class="form-control" #newName><br><br>
        </div>
      <div>
-         <label>Enter Description</label>
-         <input class="form-control" #newDescription>
+           <span class="label label-info"><label>Enter Description</label></span>
+         <input class="form-control" #newDescription><br><br>
      </div>
      <div>
-       <label>Enter Calories</label>
+         <span class="label label-danger"><label>Enter Calories</label></span>
        <input class="form-control" #newCalories>
 
         </div>
