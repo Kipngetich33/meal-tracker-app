@@ -2,7 +2,7 @@
     David Kahara
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
-## Description;
+## Description:
     A Meal tracking application made with Angular 2
     RunTime environment built with Gulp
     Server: Local(Browser-Sync)
@@ -12,4 +12,4 @@
     Run 'gulp serve' to start the application.  
 ## link to deployed app
 
-    To see the webpage click [here](http://burgler-crocodile-78854.netlify.com/)
+    To view the webpage click [here](http://burgler-crocodile-78854.netlify.com/)
