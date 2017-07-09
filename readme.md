@@ -12,4 +12,4 @@
     Run 'gulp serve' to start the application.  
 ## link to deployed app
 
-    To view the webpage click [here](http://burgler-crocodile-78854.netlify.com/)
+To view the webpage click [here](http://burgler-crocodile-78854.netlify.com/)
